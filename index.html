@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./resources/css/reset.css">
     <link rel="stylesheet" href="./resources/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="./resources/js/script.js"></script>
+
     <title>Document</title>
 </head>
 
@@ -93,7 +97,7 @@
                 <span class="one">1</span>
             </div>
             <div class="video_banner"></div>
-            <div class="video_lauf">test</div>
+            <div class="video_lauf"></div>
         </div>​
         <!-- VIDEO SECTION End -->
 
@@ -131,29 +135,54 @@
         <!-- LINKS SECTIONS End -->
 
 
-        
+
 
 
 
     </div>
     <!-- ORF ADMIN SECTION Start -->
     <section class="orf_admin">
-            <form>
-                <div class="admin_breite">
-                    <label for="">Breite</label>
-                    <input type="range" name="" id="">
-                </div>
-                <div class="admin_speed">
-                    <label for="">Geschwindigkeit</label>
-                    <input type="range" name="" id="">
-                </div>
-                <div class="admin_loop">
-                    <label for="">Anzahl der Durchläufe</label>
-                    <input type="range" name="" id="">
-                </div>
-            </form>
-        </section>
-        <!-- ORF ADMIN SECTION End -->
+        <form>
+            <div class="admin_height">
+                <label for="height">Breite</label>
+                <input type="range" min="10" max="45" value="16" step="0.1" name="height" id="height">
+            </div>
+            <div class="admin_speed">
+                <label for="speed">Geschwindigkeit</label>
+                <input type="range" min="0.1" max="40" step="0.1" value="40" name="speed" id="speed">
+            </div>
+            <div class="admin_loop">
+                <label for="loop">Anzahl der Durchläufe</label>
+                <input type="range" min="1" max="11" value="1" name="loop" id="loop">
+            </div>
+        </form>
+        <div class="textchoice">
+            <div class="btn_choice">
+                <button class="btn btn_text1">Integrationsbereich</button>
+                <button class="btn btn_text2">Donald Trump Export</button>
+                <button class="btn btn_text3">Koalitionsverhandlungen</button>
+                <button class="btn btn_text4">WWF Waldbericht</button>
+            </div>
+            <div class="hide">
+                <h1>aktuelle News</h1>
+                <p class="text1">Der frühere Flüchtlingskoordinator des Bundes, Christian Konrad, hat mit Mitstreitern eine Allianz gegründet.
+                    „Menschen.Würde.Österreich“ soll Initiativen, NGOs und Einzelpersonen, die sich im Integrationsbereich
+                    engagieren, mehr öffentliches Gehör verschaffen. Außerdem will man auf die ÖVP-FPÖ-Bundesregierung einwirken,
+                    um Pläne noch einmal zu überdenken.</p>
+                <p class="text2">US-Präsident Donald Trump will den Export bewaffneter Drohnen Insidern zufolge erleichtern. Vor allem die
+                    Hürden für den Verkauf kleinerer Drohnen mit weniger Raketen und kürzeren Reichweiten als die größeren
+                    Typen wie der Predator sollen gesenkt werden. </p>
+                <p class="text3">Auf 30 Eckpunkte habe man sich laut ÖVP in den Koalitionsverhandlungen geeinigt, der Pakt ist 70 Seiten stark
+                    und wird um 17.00 Uhr dem ÖVP-Parteivorstand präsentiert. Zur gleichen Zeit informieren auch die Grünen
+                    das Verhandlungsergebnis parteiintern.</p>
+                <p class="text4">Laut dem aktuellen Waldbericht des WWF sind seit 1990 fast 2,4 Millionen Quadratkilometer Naturwald verschwunden.
+                    Bis 2030 könnte Wald im Ausmaß der 20-fachen Fläche Österreichs verloren gehen, wenn die dramatischen
+                    Entwicklungen nicht gestoppt werden, hieß es in einer Aussendung.</p>
+                <p class="ende"></p>
+            </div>
+        </div>
+    </section>
+    <!-- ORF ADMIN SECTION End -->
 </body>
 
 </html>

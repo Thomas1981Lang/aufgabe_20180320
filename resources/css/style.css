@@ -2,10 +2,8 @@
 **********   BASIC STLYING   **************
 ******************************************/
 
-
-
 body {
-    font-family: Arial,Helvetica,sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
 
@@ -21,13 +19,15 @@ html {
     margin: 0 auto;
 }
 
-
+@media only screen and (max-width: 1200px) {
+    .wrapper {
+        width: 100%;
+    }
+}
 
 /******************************************
 **********   HEADER SECTION   *************
 ******************************************/
-
-
 
 .header {
     display: flex;
@@ -36,12 +36,12 @@ html {
     height: 50px;
     padding: 15px;
     font-size: 26px;
-    font-weight:  bold;
+    font-weight: bold;
 }
 
 .header_logo {
     color: #a8a8a8;
-    padding-left: 6%; 
+    padding-left: 6%;
 }
 
 .header_orf {
@@ -60,6 +60,7 @@ aside {
     line-height: 1.9rem;
     text-align: center;
 }
+
 aside h1 {
     display: flex;
     align-items: center;
@@ -71,7 +72,7 @@ aside h1 {
 }
 
 .pipe {
-    padding: 0 5px ;
+    padding: 0 5px;
 }
 
 .tzo {
@@ -82,20 +83,16 @@ aside h1 {
     color: white;
     background-color: #d2190a;
     padding: 1px;
-
 }
+
 aside h2 {
- font-size: 18px;
- letter-spacing: 1.5px;
+    font-size: 18px;
+    letter-spacing: 1.5px;
 }
-
-
 
 /******************************************
 *******   SECTION-NAV SECTION   ***********
 ******************************************/
-
-
 
 .section_nav {
     font-size: 15px;
@@ -107,7 +104,7 @@ aside h2 {
     cursor: pointer;
 }
 
-.section_nav span:hover{
+.section_nav span:hover {
     color: #a8a8a8;
 }
 
@@ -120,12 +117,15 @@ aside h2 {
 }
 
 
+@media only screen and (max-width: 630px) {
+    .section_nav {
+        font-size: 11px;
+    }
+}
 
 /******************************************
 *******   TV-NAV SECTION   ***********
 ******************************************/
-
-
 
 .tv_nav {
     text-transform: uppercase;
@@ -165,18 +165,16 @@ aside h2 {
 
 .tv_nav button {
     border: none;
-    color:#949494;
+    color: #949494;
     background-color: white;
     height: 26px;
     font-size: 19px;
     cursor: pointer;
 }
 
-.tv_nav span:hover{
+.tv_nav span:hover {
     color: black;
 }
-
-
 
 /******************************************
 ********   ZIB1 LOGO SECTION   ************
@@ -193,26 +191,19 @@ aside h2 {
 
 .zib1logo .zib {
     background-color: #d2190a;
-
     font-size: 35px;
 }
 
 .zib1logo .one {
-    border:  3px solid white;
+    border: 3px solid white;
     border-radius: 6px;
     font-size: 26px;
     margin-left: 5px;
-
 }
-
-
-
 
 /******************************************
 **********   VIDEO SECTION   **************
 ******************************************/
-
-
 
 .video {
     width: 100%;
@@ -227,25 +218,23 @@ aside h2 {
 }
 
 .video_banner {
+    display: flex;
+    flex-wrap: nowrap;
+    
     position: absolute;
     bottom: 2%;
     left: 0;
     width: 100%;
     background-color: white;
     opacity: 0.9;
-    height: 8%;
+    height: 9%;
+    padding: 2px;
 }
 
 .video_lauf {
     color: black;
-    font-size: calc((675px/100)*7);
     position: absolute;
-    bottom: 1.8%;
-    left: 0;
-    width: 100%;
-    
-    
-    height: 8%;
+    bottom: 2%;
 }
 
 .video_logo {
@@ -275,12 +264,11 @@ aside h2 {
 }
 
 .one {
-    border:  3px solid white;
+    border: 3px solid white;
     border-radius: 6px;
     padding: 8px 12px;
     font-size: 35px;
     margin-left: 5px;
-
 }
 
 .video_logo {
@@ -310,13 +298,9 @@ aside h2 {
     font-size: 70%;
 }
 
-
-
 /******************************************
 **********   LINKS SECTION   **************
 ******************************************/
-
-
 
 .links {
     margin-top: 9%;
@@ -324,7 +308,7 @@ aside h2 {
 
 h3 {
     font-size: 20px;
-    padding-bottom: 6px; 
+    padding-bottom: 6px;
 }
 
 ul li {
@@ -332,12 +316,12 @@ ul li {
     justify-content: space-between;
     align-items: center;
     font-size: 20px;
-   list-style-type: disc;
-   padding: 20px 25px;
-   background-color: white;
-   color: black;
-   border-bottom:  1px solid #dfdfdf;
-   cursor: pointer;
+    list-style-type: disc;
+    padding: 20px 25px;
+    background-color: white;
+    color: black;
+    border-bottom: 1px solid #dfdfdf;
+    cursor: pointer;
 }
 
 ul li i {
@@ -345,19 +329,16 @@ ul li i {
     color: #dfdfdf;
 }
 
-
-
 /******************************************
 *********   ORF ADMIN SECTION   ***********
 ******************************************/
 
 .orf_admin {
-    
     position: fixed;
-    
     bottom: 0;
     background-color: gray;
     width: 100%;
+    height: 140px;
 }
 
 .orf_admin form {
@@ -367,7 +348,24 @@ ul li i {
     height: 80px;
 }
 
-.orf_admin form div{
+.orf_admin form div {
     padding: 20px;
     display: flex;
- }
+}
+
+.btn_choice {
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn {
+    padding: 10px;
+}
+
+.btn a {
+    text-decoration: none;
+}
+
+.hide {
+    display: none;
+}
