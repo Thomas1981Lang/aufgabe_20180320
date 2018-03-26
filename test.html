@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+
+            var textubergabe = $('.textblind').html();
+            console.log(textubergabe)
+            var nocheintest = $('<div>').html(textubergabe).find('pre').css({
+                'font-size': '18px',
+                'font-family': 'Arial'
+            }).appendTo('body')[0].scrollWidth;
+
+
+            var test = $('.textblind')[0].scrollWidth;
+            console.log(nocheintest);
+
+
+        })
+    </script>
+    <style>
+        body {
+            overflow: hidden;
+        }
+
+        .wrapper {
+            max-width: 300px;
+        }
+
+        .text1 {
+            font-size: 30px;
+            position: relative;
+            /* top: -99999px; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Der frühere Flüchtlingskoordinator des Bundes, Christian Konrad, hat mit Mitstreitern eine Allianz gegründet. „Menschen.Würde.Österreich“
+            soll Initiativen, NGOs und Einzelpersonen, die sich im Integrationsbereich engagieren, mehr öffentliches Gehör
+            verschaffen. Außerdem will man auf die ÖVP&minus;FPÖ&minus;Bundesregierung einwirken, um Pläne noch einmal zu
+            überdenken.
+        </h1>
+    </div>
+
+
+    <div class="textblind">
+        <pre class="text1">Der frühere Flüchtlingskoordinator des Bundes, Christian Konrad, hat mit Mitstreitern eine Allianz gegründet. „Menschen.Würde.Österreich“ soll Initiativen, NGOs und Einzelpersonen, die sich im Integrationsbereich engagieren, mehr öffentliches Gehör verschaffen. Außerdem will man auf die ÖVP&minus;FPÖ&minus;Bundesregierung einwirken, um Pläne noch einmal zu überdenken.</pre>
+    </div>
+</body>
+
+</html>

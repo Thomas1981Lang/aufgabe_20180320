@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./resources/css/style.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
-    <script src="./resources/js/script.js"></script>
+    <script src="./resources/js/script_ohnePlugin.js"></script>
 
     <title>Document</title>
 </head>
@@ -84,8 +84,12 @@
         <!-- ZIB 1 LOGO SECTION End -->
 
         <!-- VIDEO SECTION Start -->
-        <div class="video">
-            <iframe class="frame" src="https://www.youtube.com/embed/Xn8VWkr0oiA?autoplay=0&amp;rel=0&amp;controls=0&amp;showinfo=0"></iframe>
+        <div id="video" class="video">
+            <iframe class="frame" src="https://www.youtube.com/embed/Xn8VWkr0oiA?autoplay=0&amp;rel=0&amp;controls=0&amp;showinfo=0">
+            
+                <div class="video_banner"></div>
+                <div class="video_lauf"></div>
+            </iframe>
 
             <div class="video_logo">
                 <span class="video_orf">ORF</span>
@@ -165,10 +169,9 @@
             </div>
             <div class="hide">
                 <h1>aktuelle News</h1>
-                <p class="text1">Der frühere Flüchtlingskoordinator des Bundes, Christian Konrad, hat mit Mitstreitern eine Allianz gegründet.
-                    „Menschen.Würde.Österreich“ soll Initiativen, NGOs und Einzelpersonen, die sich im Integrationsbereich
-                    engagieren, mehr öffentliches Gehör verschaffen. Außerdem will man auf die ÖVP-FPÖ-Bundesregierung einwirken,
-                    um Pläne noch einmal zu überdenken.</p>
+                <div class="text1">
+                <pre>Der&nbsp;frühere&nbsp;Flüchtlingskoordinator&nbsp;des&nbsp;Bundes,&nbsp;Christian&nbsp;Konrad,&nbsp;hat&nbsp;mit&nbsp;Mitstreitern&nbsp;eine&nbsp;Allianz&nbsp;gegründet.&nbsp;„Menschen.Würde.Österreich“&nbsp;soll&nbsp;Initiativen,&nbsp;NGOs&nbsp;und&nbsp;Einzelpersonen,&nbsp;die&nbsp;sich&nbsp;im&nbsp;Integrationsbereich&nbsp;engagieren,&nbsp;mehr&nbsp;öffentliches&nbsp;Gehör&nbsp;verschaffen.&nbsp;Außerdem&nbsp;will&nbsp;man&nbsp;auf&nbsp;die&nbsp;ÖVP&minus;FPÖ&minus;Bundesregierung&nbsp;einwirken,&nbsp;um&nbsp;Pläne&nbsp;noch&nbsp;einmal&nbsp;zu&nbsp;überdenken.</pre>
+            </div>
                 <p class="text2">US-Präsident Donald Trump will den Export bewaffneter Drohnen Insidern zufolge erleichtern. Vor allem die
                     Hürden für den Verkauf kleinerer Drohnen mit weniger Raketen und kürzeren Reichweiten als die größeren
                     Typen wie der Predator sollen gesenkt werden. </p>
