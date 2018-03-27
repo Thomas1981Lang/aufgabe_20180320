@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="./resources/css/style.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
-    <script src="./resources/js/script_ohnePlugin.js"></script>
+    <script src="./resources/js/ticker-plugin.js"></script>
+    <script src="./resources/js/script.js"></script>
 
     <title>Document</title>
 </head>
@@ -25,7 +26,7 @@
             <h1 class="header_logo">
                 <span class="header_orf">ORF</span>
                 <span class="header_tv">TV</span>THEK</h1>
-            <aside>
+            <aside class="big">
                 <h1>1938
                     <span class="pipe"> | </span>
                     <span class="tzo">201</span>
@@ -38,16 +39,17 @@
 
         <!-- SECTION-NAV SECTION Start -->
         <section class="section_nav">
-            <span>Fernsehen</span>
-            <span class="active">TVthek</span>
-            <span>Radio</span>
-            <span>Debatte</span>
-            <span>Österreich</span>
-            <span>Wetter</span>
-            <span>Extra</span>
-            <span>Sport</span>
-            <span>News</span>
-            <span>ORF.at Überblick</span>
+            <span class="big">Fernsehen</span>
+            <span class="active big">TVthek</span>
+            <span class="big">Radio</span>
+            <span class="big">Debatte</span>
+            <span class="big">Österreich</span>
+            <span class="big">Wetter</span>
+            <span class="big">Extra</span>
+            <span class="big">Sport</span>
+            <span class="big">News</span>
+            <span class="big">ORF.at Überblick</span>
+            <span class="small"><i class="fa fa-bars fa-2x"></i></span>
         </section>
         <!-- SECTION-NAV SECTION End -->
 
@@ -56,12 +58,13 @@
         <!-- TV-NAV SECTION Start -->
         <section class="tv_nav">
             <div class="tv_nav_section">
-                <span>Übersicht</span>
-                <span>Sendungen</span>
-                <span>Themen</span>
-                <span>Live</span>
-                <span>Senungen verpasst</span>
-                <span>Archiv</span>
+                <span class="big">Übersicht</span>
+                <span class="big">Sendungen</span>
+                <span class="big">Themen</span>
+                <span class="big">Live</span>
+                <span class="big">Senungen verpasst</span>
+                <span class="big">Archiv</span>
+                
             </div>
             <form action="?" method="post">
                 <input type="text" placeholder="Suche in der TVthek">
@@ -86,7 +89,7 @@
         <!-- VIDEO SECTION Start -->
         <div id="video" class="video">
             <iframe class="frame" src="https://www.youtube.com/embed/Xn8VWkr0oiA?autoplay=0&amp;rel=0&amp;controls=0&amp;showinfo=0">
-            
+
                 <div class="video_banner"></div>
                 <div class="video_lauf"></div>
             </iframe>
@@ -110,28 +113,28 @@
         <section class="links">
             <h3>Links</h3>
             <ul>
-                <li>* Frankreich: Polizei tötet islamistischen Geiselnehmer (news.ORF.at; 23.03.2018)
+                <li><span>* Frankreich: Polizei tötet islamistischen Geiselnehmer (news.ORF.at; 23.03.2018)</span>
                     <i class="fa fa-angle-right fa-2x"></i>
                 </li>
-                <li>* Kaiser: „Schiefe Optik“ bei Koralm-Verzögerung (kaernten.ORF.at; 23.03.2018)
+                <li><span>* Kaiser: „Schiefe Optik“ bei Koralm-Verzögerung (kaernten.ORF.at; 23.03.2018)</span>
                     <i class="fa fa-angle-right fa-2x"></i>
                 </li>
-                <li>* Lift außer Kontrolle: Menschliches Versagen (vorarlberg.ORF.at; 23.03.2018)
+                <li class="big"><span>* Lift außer Kontrolle: Menschliches Versagen (vorarlberg.ORF.at; 23.03.2018)</span>
                     <i class="fa fa-angle-right fa-2x"></i>
                 </li>
-                <li>* Strafzölle: Trump belastet China, verschont vorerst EU (news.ORF.at; 22.03.2018)
+                <li class="big"><span>* Strafzölle: Trump belastet China, verschont vorerst EU (news.ORF.at; 22.03.2018)</span>
                     <i class="fa fa-angle-right fa-2x"></i>
                 </li>
-                <li>* SPÖ-Klubchef Schieder zum BVT-U-Auschuss (tvthek.ORF.at; 23.03.2018)
+                <li class="big"><span>* SPÖ-Klubchef Schieder zum BVT-U-Auschuss (tvthek.ORF.at; 23.03.2018)</span>
                     <i class="fa fa-angle-right fa-2x"></i>
                 </li>
-                <li>* BVT-U-Ausschuss: SPÖ will vor VfGH ziehen (news.ORF.at; 23.03.2018)
+                <li class="big"><span>* BVT-U-Ausschuss: SPÖ will vor VfGH ziehen (news.ORF.at; 23.03.2018)</span>
                     <i class="fa fa-angle-right fa-2x"></i>
                 </li>
-                <li>* BVT-U-Ausschuss kommt vorerst nicht (news.ORF.at; 22.03.2018)
+                <li class="big"><span>* BVT-U-Ausschuss kommt vorerst nicht (news.ORF.at; 22.03.2018)</span>
                     <i class="fa fa-angle-right fa-2x"></i>
                 </li>
-                <li>* Mehr zur ZIB in tv.ORF.at
+                <li class="big"><span>* Mehr zur ZIB in tv.ORF.at</span>
                     <i class="fa fa-angle-right fa-2x"></i>
                 </li>
             </ul>
@@ -153,7 +156,7 @@
             </div>
             <div class="admin_speed">
                 <label for="speed">Geschwindigkeit</label>
-                <input type="range" min="0.1" max="40" step="0.1" value="40" name="speed" id="speed">
+                <input type="range" min="0.1" max="40" step="0.1" value="15" name="speed" id="speed">
             </div>
             <div class="admin_loop">
                 <label for="loop">Anzahl der Durchläufe</label>
@@ -167,25 +170,26 @@
                 <button class="btn btn_text3">Koalitionsverhandlungen</button>
                 <button class="btn btn_text4">WWF Waldbericht</button>
             </div>
-            <div class="hide">
-                <h1>aktuelle News</h1>
-                <div class="text1">
-                <pre>Der&nbsp;frühere&nbsp;Flüchtlingskoordinator&nbsp;des&nbsp;Bundes,&nbsp;Christian&nbsp;Konrad,&nbsp;hat&nbsp;mit&nbsp;Mitstreitern&nbsp;eine&nbsp;Allianz&nbsp;gegründet.&nbsp;„Menschen.Würde.Österreich“&nbsp;soll&nbsp;Initiativen,&nbsp;NGOs&nbsp;und&nbsp;Einzelpersonen,&nbsp;die&nbsp;sich&nbsp;im&nbsp;Integrationsbereich&nbsp;engagieren,&nbsp;mehr&nbsp;öffentliches&nbsp;Gehör&nbsp;verschaffen.&nbsp;Außerdem&nbsp;will&nbsp;man&nbsp;auf&nbsp;die&nbsp;ÖVP&minus;FPÖ&minus;Bundesregierung&nbsp;einwirken,&nbsp;um&nbsp;Pläne&nbsp;noch&nbsp;einmal&nbsp;zu&nbsp;überdenken.</pre>
+            
+    </section>
+    <!-- ORF ADMIN SECTION End -->
+    <div class="hide">
+            <h1>aktuelle News</h1>
+            <div class="text1">
+                <pre>Der frühere Flüchtlingskoordinator des Bundes, Christian Konrad, hat  mit Mitstreitern eine Allianz gegründet. „Menschen.Würde.Österreich“ soll Initiativen, NGOs und Einzelpersonen, die sich im Integrationsbereich engagieren, mehr öffentliches Gehör verschaffen. Außerdem will man auf die ÖVP&minus;FPÖ&minus;Bundesregierung einwirken, um Pläne noch einmal zu überdenken.</pre>
             </div>
-                <p class="text2">US-Präsident Donald Trump will den Export bewaffneter Drohnen Insidern zufolge erleichtern. Vor allem die
-                    Hürden für den Verkauf kleinerer Drohnen mit weniger Raketen und kürzeren Reichweiten als die größeren
-                    Typen wie der Predator sollen gesenkt werden. </p>
-                <p class="text3">Auf 30 Eckpunkte habe man sich laut ÖVP in den Koalitionsverhandlungen geeinigt, der Pakt ist 70 Seiten stark
-                    und wird um 17.00 Uhr dem ÖVP-Parteivorstand präsentiert. Zur gleichen Zeit informieren auch die Grünen
-                    das Verhandlungsergebnis parteiintern.</p>
-                <p class="text4">Laut dem aktuellen Waldbericht des WWF sind seit 1990 fast 2,4 Millionen Quadratkilometer Naturwald verschwunden.
-                    Bis 2030 könnte Wald im Ausmaß der 20-fachen Fläche Österreichs verloren gehen, wenn die dramatischen
-                    Entwicklungen nicht gestoppt werden, hieß es in einer Aussendung.</p>
+            <div class="text2">
+                <pre>US-Präsident Donald Trump will den Export bewaffneter Drohnen Insidern zufolge erleichtern. Vor allem die Hürden für den Verkauf kleinerer Drohnen mit weniger Raketen und kürzeren Reichweiten als die größeren Typen wie der Predator sollen gesenkt werden. </pre>
+            </div>
+            <div class="text3">
+                <pre>Auf 30 Eckpunkte habe man sich laut ÖVP in den Koalitionsverhandlungen geeinigt, der Pakt ist 70 Seiten stark und wird um 17.00 Uhr dem ÖVP-Parteivorstand präsentiert. Zur gleichen Zeit informieren auch die Grünen das Verhandlungsergebnis parteiintern.</pre>
+            </div>
+            <div class="text4">
+                <pre>Laut dem aktuellen Waldbericht des WWF sind seit 1990 fast 2,4 Millionen Quadratkilometer Naturwald verschwunden. Bis 2030 könnte Wald im Ausmaß der 20-fachen Fläche Österreichs verloren gehen, wenn die dramatischen Entwicklungen nicht gestoppt werden, hieß es in einer Aussendung.</pre>
                 <p class="ende"></p>
             </div>
         </div>
-    </section>
-    <!-- ORF ADMIN SECTION End -->
+    </div>
 </body>
 
 </html>
