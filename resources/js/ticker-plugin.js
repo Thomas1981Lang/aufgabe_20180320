@@ -70,7 +70,6 @@ $.fn.ticker = function (options, callback) {
             }
             var add = function () {
                 pause++;
-                console.log('add seconds++', pause);
                 timer();
             }
 
@@ -94,14 +93,10 @@ $.fn.ticker = function (options, callback) {
                 }, function () {
                     clearTimeout(t);
                     var addTime = speed - pause * 100;
-                    console.log('addTime', addTime);
-                    console.log('pauseadd', pause);
                     $(this).animate({
                         right: 0
                     }, addTime, 'linear', function () {
-                        console.log('animation fertig');
                         panel++;
-                        console.log('panel', panel);
                         $(this).html(lauftext).css({
                             'right': bannerPosStart + 'px',
                             'width': bannerlenge + 'px'
@@ -117,9 +112,7 @@ $.fn.ticker = function (options, callback) {
             $(this).animate({
                 right: 0
             }, speed, 'linear', function () {
-                console.log('animation fertig');
                 panel++;
-                console.log('panel', panel);
                 $(this).html(lauftext).css({
                     'right': bannerPosStart + 'px',
                     'width': bannerlenge + 'px'
@@ -129,9 +122,7 @@ $.fn.ticker = function (options, callback) {
                 }
             }); //this.animation
 
-if (panel >= loops) {
-    console.log('panel loops draußen');
-}
+
         } //   for loop
 
 
