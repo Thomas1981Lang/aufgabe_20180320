@@ -423,7 +423,7 @@ li.small {
 
 .orf_admin {
     overflow: hidden;
-    position: fixed;
+    position: sticky;
     display: flex;
     flex-direction: column;
     overflow: auto;
