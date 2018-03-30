@@ -423,7 +423,7 @@ li.small {
 
 .orf_admin {
     overflow: hidden;
-    position: sticky;
+    position: fixed;
     display: flex;
     flex-direction: column;
     overflow: auto;
@@ -469,5 +469,12 @@ li.small {
     
     .orf_admin form div {
         flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    
+    .orf_admin  {
+        position: relative;
     }
 }
