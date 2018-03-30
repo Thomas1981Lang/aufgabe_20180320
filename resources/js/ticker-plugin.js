@@ -19,8 +19,8 @@ $.fn.ticker = function (options, callback) {
 
     /*---------- CALLBACK OPTION -------------- */
     /*------ for a try - then not needed ----*/
-    if (typeof callback == 'function') { 
-        callback.call(this); 
+    if (typeof callback == 'function') {
+        callback.call(this);
     }
 
 
@@ -62,8 +62,17 @@ $.fn.ticker = function (options, callback) {
 
 
         for (i = 0; i < loops; i++) {
-
-
+            var panel = 0
+            var pause = 0;
+            var t;
+            var timer = function () {
+                t = setTimeout(add, 100);
+            }
+            var add = function () {
+                pause++;
+                console.log('add seconds++', pause);
+                timer();
+            }
 
 
             bannerlenge = lange + video;
@@ -81,11 +90,18 @@ $.fn.ticker = function (options, callback) {
                     'cursor': 'grabbing'
                 }).hover(function () {
                     $(this).stop();
+                    timer();
                 }, function () {
+                    clearTimeout(t);
+                    var addTime = speed - pause * 100;
+                    console.log('addTime', addTime);
+                    console.log('pauseadd', pause);
                     $(this).animate({
                         right: 0
-                    }, speed, 'linear', function () {
+                    }, addTime, 'linear', function () {
                         console.log('animation fertig');
+                        panel++;
+                        console.log('panel', panel);
                         $(this).html(lauftext).css({
                             'right': bannerPosStart + 'px',
                             'width': bannerlenge + 'px'
@@ -102,13 +118,20 @@ $.fn.ticker = function (options, callback) {
                 right: 0
             }, speed, 'linear', function () {
                 console.log('animation fertig');
+                panel++;
+                console.log('panel', panel);
                 $(this).html(lauftext).css({
                     'right': bannerPosStart + 'px',
                     'width': bannerlenge + 'px'
                 });
+                if (panel >= loops) {
+                    $('.orf_admin').show(200);
+                }
             }); //this.animation
 
-
+if (panel >= loops) {
+    console.log('panel loops draußen');
+}
         } //   for loop
 
 

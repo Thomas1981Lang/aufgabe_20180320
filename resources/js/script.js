@@ -11,6 +11,7 @@ $(document).ready(function () {
 
     $('.btn_text1').on('click', function () {
 
+        $('.orf_admin').hide(200);
         lauftext = $('.text1').html();
         loop = $('#loop').val();
         sizeFont = $('#height').val();
@@ -40,6 +41,8 @@ $(document).ready(function () {
     /*********    BUTTON 2    *********/
 
     $('.btn_text2').on('click', function () {
+
+        $('.orf_admin').hide(200);
         lauftext = $('.text2').html();
         loop = $('#loop').val();
         sizeFont = $('#height').val();
@@ -71,7 +74,8 @@ $(document).ready(function () {
     /*********    BUTTON 3    *********/
 
     $('.btn_text3').on('click', function () {
-        $('.orf_admin').hide(800);
+
+        $('.orf_admin').hide(200);
         lauftext = $('.text3').html();
         loop = $('#loop').val();
         sizeFont = $('#height').val();
@@ -108,6 +112,8 @@ $(document).ready(function () {
     /*********    BUTTON 4    *********/
 
     $('.btn_text4').on('click', function () {
+
+        $('.orf_admin').hide(200);
         lauftext = $('.text4').html();
         loop = $('#loop').val();
         sizeFont = $('#height').val();
@@ -135,14 +141,6 @@ $(document).ready(function () {
         });
 
     });
-
-
-
-
-
-
-
-
 
 
 
